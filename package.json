@@ -1,0 +1,17 @@
+{
+  "name": "kardashev-scale",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "homepage": "https://AaronMAgosto.github.io/kardashev-scale",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "gh": "^2.8.9",
+    "pages": "^0.0.16"
+  }
+}
