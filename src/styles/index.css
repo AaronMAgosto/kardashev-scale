@@ -21,12 +21,17 @@ h1,h2,h3{
 
 
 h1 {
-    font-size: 50px;
+    font-size: clamp(35px, 4vw, 80px);
 }
 
 h2{
-    font-size: 40px;
+    font-size: clamp(30px, 4vw, 50px);
 } 
+
+/* h3{
+    font-size: clamp(25px, 4vw, 35px);
+    text-align: center;
+} */
 
 main, section, footer {
    
@@ -35,7 +40,7 @@ main, section, footer {
 }
 
 p{
-    font-size: 25px;
+    font-size: clamp(17px, 4vw, 23px);
     font-family: 'Space Mono', monospace;
 }
 
@@ -58,3 +63,23 @@ footer {
     display: flex;
     justify-content: center;
 }
+
+@media (max-width: 768px) {
+    .container{
+        flex-direction: column;
+    }
+
+    section.container div {
+        width: 100%;
+        margin-bottom: 130px;
+    }
+
+    section.container figure img:hover{
+        transform: scale(1);
+    }
+}
+
+.flex-container figure summary {
+    cursor: pointer;
+}
+
